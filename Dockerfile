@@ -6,4 +6,4 @@ RUN apt-get update \
     && apt-get clean \
     && ln -sf /bin/bash /bin/sh
     
-COPY ["https://gist.githubusercontent.com/dblackdblack/8ee26ab2216cabe411143c349150e6b3/raw", "/etc/nginx/conf.d/default.conf"]
+ADD ["https://gist.githubusercontent.com/dblackdblack/8ee26ab2216cabe411143c349150e6b3/raw", "/etc/nginx/conf.d/default.conf"]
